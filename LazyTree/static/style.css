@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.tabs {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: start;
+    gap: 10px; /* This ensures even spacing between buttons */
+}
+
+.tabs button {
+    background-color: #e7e7e7; /* Light grey for neutral tabs */
+    border: 1px solid #ccc; /* Add border to define edges */
+    padding: 8px 20px; /* Slightly larger padding for a balanced look */
+    padding-bottom: 10px;
+    margin: 0; /* Reset any margins */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tabs button.active {
+    background-color: #4CAF50; /* Green for active category */
+    color: white;
+    border-color: #4CAF50; /* Same as background for seamless look */
+}
+
+.tabs button.subcategory {
+    background-color: #2196F3; /* Blue for subcategories */
+    color: white;
+}
+
+.tabs button.subcategory.active {
+    background-color: #f44336; /* Red for active subcategory */
+    border-color: #f44336; /* Same as background for seamless look */
+}
+
+.tabs button:hover {
+    background-color: #ddd;
+    transform: translateY(-2px);
+}
+
+#task-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#task-form input, #task-form select, #task-form button {
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#task-form button {
+    background-color: #008CBA; /* Blue for general actions */
+    color: white;
+    cursor: pointer;
+}
+
+#task-form button:hover {
+    background-color: #0007B9; /* Darker blue on hover */
+}
+
+#tasks-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tasks-list li {
+    background-color: #eee;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}

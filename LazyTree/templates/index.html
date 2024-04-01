@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div class="tabs">
+            <button onclick="changeCategory('Daily')">Daily</button>
+            <button onclick="changeCategory('Weekly')">Weekly</button>
+        </div>
+        <div id="subcategories" class="tabs"></div>
+        <div id="task-form">
+            <input type="text" id="task-description" placeholder="Task description">
+            <input type="text" id="task-details" placeholder="Task details">
+            <input type="number" id="task-order" placeholder="Order">
+            <select id="task-category">
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+            </select>
+            <!-- Include other fields like subcategory, time_of_day, etc. -->
+        
+            <button onclick="addTask()">Add Task</button>
+        </div> 
+        <ul id="tasks-list"></ul>
+        <ul id="tasks-list"></ul>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
